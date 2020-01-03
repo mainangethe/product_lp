@@ -3,3 +3,125 @@
   Date: Jan 3, 2020
   Topic: Responsive Shoe landing page styles
 */
+
+
+
+
+/* 1. Third(3rd) Party Imports
+------------------------------ */
+
+
+
+
+/* 2. Global Styles
+------------------- */
+*,
+*::before,
+*::after  {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+
+html  {
+  font-family: 'Roboto Lt', sans-serif;
+  font-size: 10px;
+  color: #333;
+
+  box-sizing: border-box;
+}
+
+
+
+
+
+/* 3. Header Styles
+------------------- */
+header  {
+  width: 100%;
+  height: 2vh;
+  position: relative;
+}
+
+
+a  {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu-toggle  {
+  width: 5rem;
+  height: 5rem;
+
+  cursor: pointer;
+  outline: none;
+  display: none;
+
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+  .menu-toggle i,
+  .fa-times  { font-size: 3.5rem; }
+
+
+.fa-times  { display: none; }
+
+
+nav  {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 3;
+
+  border-bottom: 1px solid rgba(0, 0, 0, .075);
+}
+
+
+.nav-brand  {
+  width: 5rem;
+  box-sizing: content-box;
+  padding-left: 3rem;
+}
+
+  .nav-brand img  {
+    display: block;
+    width: 100%;
+  }
+
+
+nav ul  {
+  height: 8rem;
+  list-style: none;
+  
+  display: flex;
+  font-size: 1.6rem;
+}
+
+
+nav ul li  {
+  padding: 0 3rem;
+  line-height: 8rem;
+  transition: background-color .5s;
+}
+
+  nav ul li:hover  { background-color: rgba(0, 0, 0, .075); }
+
+
+.nav-right ul li  { border-right: 1px solid rgba(0, 0, 0, .075); }
+
+  .nav-right ul li:nth-child(1)  { border-left: 1px solid rgba(0, 0, 0, .075); }
+
+  .nav-right ul li:last-child  { border-right: none; }
+
+
+.nav-right i  { margin-right: 1rem !important; }
+
+  .nav-right i:first-child  { margin-right: 0; }
+
